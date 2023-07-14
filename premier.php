@@ -128,11 +128,10 @@ include_once("Controller/LeagueInfo.php");
             <?php } ?>
             </tbody>
   </table>
-  <img className="leagueImg" src="">
 </div>
 
 
-<div class="rankingtable bestgoal" style="width:50%;float:right;margin-bottom:500px;">
+<div class="rankingtable bestgoal" style="width:50%;float:right;margin-bottom:930px;">
   <p class="cap">득점 순위</p>
   <table class="tg" width="100%">
         <thead>
@@ -168,11 +167,10 @@ include_once("Controller/LeagueInfo.php");
             <?php } ?>
             </tbody>
   </table>
-  <img className="leagueImg" src="">
 </div>
 
 
-<div class="rankingtable leagueSchedule">
+<div class="leagueSchedule">
   <p class="cap">리그 전체 경기 일정</p>
   <table class="tg" width="100%">
       <thead>
