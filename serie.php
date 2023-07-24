@@ -4,61 +4,20 @@ include_once("Controller/LeagueInfo.php");
 ?>
 
 <style>
-  .cap{
-      caption-side: top;
-      text-align: center;
-    }
-  .tg{  
-      border-collapse: collapse;
-      border-color: #ccc;
-      border-spacing: 0;
-    }
-    
-    .tg td{
-      background-color: #fff;
-      border-color: #ccc;
-      border-style: solid;
-      border-width: 0px;
-      color: #333;
-      font-family: Arial, sans-serif;
-      font-size: 14px;
-      overflow: hidden;
-      padding: 10px 5px;
-      word-break: normal;
-    }
-
-    .tg th{
-      background-color: #f0f0f0;
-      border-color: #ccc;
-      border-style: solid;
-      border-width: 0px;
-      color: #333;
-      font-family: Arial, sans-serif;
-      font-size: 12px;
-      font-weight: normal;
-      overflow: hidden;
-      padding: 10px 5px;
-      word-break: normal;
-    }
-
-    .tg .tr-list{
-      text-align: center;
-      vertical-align: top
-    }
-
-    .tg .tg-c3ow{
-      border-color: inherit;
-      text-align: center;
-      vertical-align: top
-    }
-    .tg .tg-0lax{
-      text-align: center;
-      vertical-align: top;
-      border-bottom: 1px solid gray;
-    }
-
-    .rankingtable {
+    .bestgoal {
       padding:1%;
+      margin-bottom: 500px;
+    }
+
+    .leagueSchedule {
+        width:100%;
+        overflow:auto;
+    }
+
+    .lgSkdTbl {
+        /* display:block; */
+        height:650px;
+        white-space: nowrap
     }
 </style>
 
@@ -91,7 +50,7 @@ include_once("Controller/LeagueInfo.php");
   <input type="hidden" id="leagueName" name="leagueName" value="PL" />
 </form>
 
-<div class="rankingtable bestgoal" style="width:50%;float:left;margin-bottom:40px;">
+<div class="rankingtable bestteam" style="width:50%;float:left;margin-bottom:40px;">
   <p class="cap">팀 순위</p>
   <table class="tg" width="100%">
         <thead>
@@ -132,7 +91,7 @@ include_once("Controller/LeagueInfo.php");
 </div>
 
 
-<div class="rankingtable bestgoal" style="width:50%;float:right;margin-bottom:930px;">
+<div class="rankingtable bestgoal" style="width:50%;float:right;">
   <p class="cap">득점 순위</p>
   <table class="tg" width="100%">
         <thead>

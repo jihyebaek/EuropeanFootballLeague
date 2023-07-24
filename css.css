@@ -28,7 +28,7 @@
     border-width: 0px;
     color: #333;
     font-family: Arial, sans-serif;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: normal;
     overflow: hidden;
     padding: 10px 5px;
@@ -49,4 +49,16 @@
     text-align: center;
     vertical-align: top;
     border-bottom: 1px solid gray;
+  }
+
+  /**/
+  .leagueSchedule {
+    width:100%;
+    overflow:auto;
+  }
+
+  .lgSkdTbl {
+    /* display:block; */
+    height:650px;
+    white-space: nowrap
   }
